@@ -7,25 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>7.Faça um script que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. 
-        Calcule e mostre o total do seu salário no referido mês.</h1>
-        <form action="exercicio7.php" method="get">
-            Quanto você ganha por hora:
-            <input type="text" name="valor"/>
-            <br></br>
-            Horas trabalhadas no mês:
-            <input type="text" name="horas">
-            <br></br>
-            <input type="submit" value="calcular"/>
-
-        </form>
-        <?php
-          $valor = $_GET["valor"];
-          $horas = $_GET["horas"];
-
-          $salario = $valor * $horas;
-          echo"O salário a receber é: R$  ".$salario.",00";
-        ?>
+    <h1>7. Faça um Programa que pergunte em que turno você estuda.
+    Peça para digitar M-matutino ou V-Vespertino ou N-Noturno. 
+    imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.</h1>
     
+    <form action="exercicio7.php"  method="get">
+        Qual o turno que você estuda:
+        <input type="text" name="letra"><br/> 
+        M - Matutino <br/>
+        V - Vespertino <br/>        
+        N - Noturno <br/>
+        <br><br/>
+        <input type="submit"  value="verificar"/>           
+    </form>
+    <?php
+     
+     $letra = $_GET["letra"];
+
+     if ($letra == "M") {
+        echo "Bom dia!";
+        
+     }else if ($letra =="V") {
+        echo " Boa tarde!";
+
+     }else if ($letra =="N") {
+        echo"Boa noite"; 
+
+    } else{ 
+        echo"Letra inválida";
+    }
+
+        
+
+     
+
+
+ 
+
+     
+    ?>
+
 </body>
 </html>
