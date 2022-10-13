@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- WHILE -- ENQUANTO-->
 <body>
-    <?php
-      $x = 100;
-      $y = 200;
-
-      $y = $y;
-
-      echo"</br>O valor de x é:" .$x;
-      echo"</br>O valor de y é:" .$y;
+    <?php 
+    //teste inicio
+    $contador = 1;
+    while ($contador <= 10){
+        echo $contador."<br>";
+        $contador = $contador + 1;
+    }
+    echo"depois... final";
+    
+    
     ?>
-
-
 </body>
 </html>
