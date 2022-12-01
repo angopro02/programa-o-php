@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Faça um script que leia três números inteiros, em seguida mostre o maior e o menor deles. </title>
+</head>
+<script>
+      function maior() {
+        var n1 = window.document.form1.n1.value;
+        n1 = parseFloat(n1);
+        var n2 = window.document.form1.n2.value;
+        n2 = parseFloat(n2);
+        var n3 = window.document.form1.n3.value;
+        n3 = parseFloat(n3);
+                if (n1 > n2 && n1 > n3) {
+                 alert("Numero maior" +n1);
+                } else if (n2 > n1 && n1 < n3){
+                  alert("Numero maior" +n2);
+                }else{alert( "terceiro é maior" )
+                }   
+                
+                 }if ((n2 > n1)) {
+                    alert("Numero menor" +n1);
+                 } else {
+                    alert("Numero maior" +n2);
+                    
+                 }
+        
+      }
+</script>
+<body>
+    <form name="form1"  action="">
+        Digite o primeiro numero:
+        <input type="text" name="" id="n1">
+        <br/><br/><br/><br/>
+        Digite o segundo numero:
+        <input type="text" name="" id="n2">
+        <br/><br/><br/><br/>   
+        Digite o terceiro numero:
+        <input type="text" name="" id="n2">
+        <br/><br/><br/><br/>       
+        <input type="submit" onclick="maior(); return false;" value="verificar o maior">
+    </form>
+</body>
+</html>
